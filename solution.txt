@@ -120,3 +120,131 @@ Install a package (e.g., requests) within the virtual environment:
 pip install requests
 Deactivate the virtual environment:
 deactivate
+
+Python Syntax and Semantics
+Here's a simple Python program that prints "Hello, World!" to the console:
+
+print("Hello, World!")
+Explanation:
+print: This is a built-in function in Python used to output text to the console.
+"Hello, World!": This is a string literal, enclosed in double quotes, that represents the text to be printed.
+
+Data Types and Variables
+Python has several basic data types:
+
+Integer (int): Whole numbers.
+Float (float): Numbers with decimal points.
+String (str): Text data.
+Boolean (bool): Represents True or False.
+List (list): Ordered collection of items.
+Dictionary (dict): Collection of key-value pairs.
+
+Here's a short script demonstrating the use of these data types:
+
+# Integer
+age = 25
+print("Age:", age)
+
+# Float
+height = 5.9
+print("Height:", height)
+
+# String
+name = "Alice"
+print("Name:", name)
+
+# Boolean
+is_student = True
+print("Is student:", is_student)
+
+# List
+numbers = [1, 2, 3, 4, 5]
+print("Numbers:", numbers)
+
+# Dictionary
+person = {"name": "Alice", "age": 25, "is_student": True}
+print("Person:", person)
+
+Control Structures
+Conditional Statements
+Conditional statements allow you to execute code based on certain conditions. Here's an example of an if-else statement:
+
+age = 18
+
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+
+Loops
+Loops allow you to execute a block of code multiple times. Here's an example of a for loop:
+
+numbers = [1, 2, 3, 4, 5]
+
+for number in numbers:
+    print(number)
+
+Functions in Python
+Functions are reusable blocks of code that perform a specific task. They help in organizing and reusing code.
+
+Here's a Python function that takes two arguments and returns their sum:
+
+def add(a, b):
+    return a + b
+
+# Example of calling the function
+result = add(3, 5)
+print("Sum:", result)
+
+Lists and Dictionaries
+Lists
+Lists are ordered collections of items that can be of different types. You can access items by their index.
+
+Dictionaries
+Dictionaries are collections of key-value pairs. Keys are unique, and values can be of any type.
+
+Here's a script demonstrating basic operations on lists and dictionaries:
+
+# List
+numbers = [1, 2, 3, 4, 5]
+numbers.append(6)
+print("List:", numbers)
+
+# Dictionary
+person = {"name": "Alice", "age": 25}
+person["is_student"] = True
+print("Dictionary:", person)
+
+Exception Handling
+Exception handling in Python allows you to handle errors gracefully using try, except, and finally blocks.
+
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+finally:
+    print("This block always executes.")
+
+Modules and Packages
+Modules are files containing Python code (functions, classes, variables) that can be imported and used in other scripts. Packages are collections of modules.
+
+To import and use a module, you use the import statement. Here's an example using the math module:
+
+import math
+
+# Using the sqrt function from the math module
+result = math.sqrt(16)
+print("Square root of 16:", result)
+File I/O
+Reading from a File
+
+with open('example.txt', 'r') as file:
+    content = file.read()
+    print("File content:", content)
+Writing to a File
+
+lines = ["First line", "Second line", "Third line"]
+
+with open('output.txt', 'w') as file:
+    for line in lines:
+        file.write(line + "\n")

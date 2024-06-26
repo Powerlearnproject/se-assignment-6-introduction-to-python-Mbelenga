@@ -1,0 +1,122 @@
+Question 1
+
+Python is a high-level, interpreted programming language known for its simplicity, readability, and versatility. It was created by Guido van Rossum and first released in 1991.
+
+Key Features of Python
+Readability and Simplicity: Python's syntax is clear and concise, making it easy to learn and use. This helps developers to write logical code and reduces the cost of program maintenance.
+
+# Example of Python's readable syntax
+def greet(name):
+    print(f"Hello, {name}!")
+Interpreted Language: Python is an interpreted language, meaning that code is executed line by line, which simplifies debugging and allows for rapid development.
+
+# You can run Python code interactively
+>>> print("Hello, World!")
+Hello, World!
+Dynamically Typed: Python does not require explicit declaration of variable types, allowing for more flexibility.
+
+# Dynamic typing example
+x = 10
+x = "Hello, World!"  # No error, type changes dynamically
+Comprehensive Standard Library: Python comes with a rich standard library that supports many common programming tasks such as file I/O, system calls, and internet protocols.
+
+# Using the standard library to read a file
+with open('example.txt', 'r') as file:
+    content = file.read()
+    print(content)
+Extensive Ecosystem: Python has a vast ecosystem of third-party packages and frameworks for web development, data analysis, machine learning, and more.
+
+# Using a third-party package (requests) to fetch a web page
+import requests
+
+response = requests.get('https://api.github.com')
+print(response.json())
+Community Support: Python has a large and active community that contributes to a wealth of resources, tutorials, and libraries.
+
+Use Cases Where Python is Particularly Effective
+Web Development: Python, with frameworks like Django and Flask, is widely used for building scalable and secure web applications.
+
+# Flask example
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Hello, Flask!"
+
+if __name__ == '__main__':
+    app.run(debug=True)
+Data Science and Machine Learning: Python is the language of choice for data scientists due to libraries like Pandas, NumPy, Matplotlib, and frameworks like TensorFlow and scikit-learn.
+
+# Data analysis with Pandas
+import pandas as pd
+
+data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [25, 30, 35]}
+df = pd.DataFrame(data)
+print(df)
+Scripting and Automation: Python is excellent for writing scripts to automate repetitive tasks.
+
+# Example script to rename multiple files
+import os
+
+for filename in os.listdir('.'):
+    if filename.endswith('.txt'):
+        os.rename(filename, filename.replace('.txt', '.md'))
+
+Question 2
+Steps to Install Python on Windows 10
+1. Download Python Installer
+Visit the official Python website: python.org.
+Navigate to the "Downloads" section.
+Click on the "Download Python 3.x.x" button. Make sure to download the latest version.
+2. Run the Python Installer
+Locate the downloaded installer file (usually in your "Downloads" folder) and double-click it to run.
+In the installer window, check the box that says "Add Python to PATH". This will allow you to use Python from the command line.
+Click on "Customize installation" if you want to modify the default installation settings. Otherwise, you can proceed with "Install Now".
+Follow the on-screen instructions to complete the installation.
+3. Verify the Installation
+Open the Command Prompt by pressing typing cmd, and hitting Enter.
+
+In the Command Prompt, type the following command and press Enter:
+
+python --version
+You should see the Python version printed, indicating that Python is installed correctly.
+
+Python 3.x.x
+4. Install pip (Python Package Installer)
+pip is included automatically with Python installation from version 3.4 onwards. You can verify if pip is installed by running:
+
+pip --version
+If pip is not installed, you can download get-pip.py from here and run:
+
+python get-pip.py
+5. Set Up a Virtual Environment
+Navigate to your project directory:
+
+cd path\to\your\project
+Create a virtual environment:
+
+python -m venv venv_name
+Activate the virtual environment:
+
+On Windows:
+venv_name\Scripts\activate
+Your command prompt should now indicate that the virtual environment is active (you'll see the name of the virtual environment in parentheses).
+
+To deactivate the virtual environment, simply run:
+deactivate
+Example Commands for Setting Up a Virtual Environment
+Navigate to project directory:
+cd C:\Users\YourUsername\YourProject
+Create virtual environment:
+python -m venv myenv
+Activate virtual environment:
+myenv\Scripts\activate
+Verify pip is working within the virtual environment:
+pip --version
+Install a package (e.g., requests) within the virtual environment:
+
+pip install requests
+Deactivate the virtual environment:
+deactivate
